@@ -1,0 +1,40 @@
+div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 200px;
+    padding: 5px;
+  }
+
+.converter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+mat-card {
+  width: 300px;
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.converter-card {
+  width: 500px;
+}

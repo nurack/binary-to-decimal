@@ -1,0 +1,39 @@
+<!-- <div>
+    <h2>Binary to decimal</h2>
+    <div>
+        <label for="binaryInput">Enter binary number: </label>
+        <input type="text" id="binaryInput" type="text" [(ngModel)] = "binaryInput" (input)="onBinaryInputChange()">
+    </div>
+
+    <div>
+        <label for="decimalOutput">Decimal Output: </label>
+        <input type="text" id="decimalOutput" type="text" [value] = "decimalOutput" readonly>
+    </div>
+</div> -->
+<div class="converter-container">
+    <mat-card class="converter-card">
+        <mat-card-header>
+            <mat-card-title>Convert binary to decimal</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form (ngSubmit)="convert()">
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Enter Binary number</mat-label>
+                    <!-- <input matInput [(ngModel)]="binaryInput" name="binaryInput" required pattern="[01]+"
+                        (input)="onBinaryInputChange()"> -->
+                        <input matInput [(ngModel)]="binaryInput" name="binaryInput" required pattern="[01]+"
+                       >
+                    <!-- <mat-error *ngIf="binaryInput">Please enter a valid binary number (0s
+                        and 1s only)</mat-error> -->
+                </mat-form-field>
+    
+                <button mat-raised-button color="primary" type="submit">Convert</button>
+    
+                <mat-form-field appearance="fill" class="full-width">
+                    <mat-label>Decimal Output</mat-label>
+                    <input matInput [value]="decimalOutput" readonly>
+                </mat-form-field>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div> 
